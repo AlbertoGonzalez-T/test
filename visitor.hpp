@@ -1,6 +1,15 @@
 #ifndef __COUNT_VISITOR_HPP__
 #define __COUNT_VISITOR_HPP__
 
+#include "../header-files/add.hpp";
+#include "../header-files/sub.hpp";
+#include "../header-files/base.hpp";
+#include "../header-files/op.hpp";
+#include "../header-files/pow.hpp";
+#include "../header-files/rand.hpp";
+#include "../header-files/mult.hpp";
+#include "../header-files/div.hpp";
+
 class CountVisitor{
     private:
         int ops = 0;

@@ -4,6 +4,7 @@
 #include "base.hpp"
 #include "math.h"
 #include "../binary_iterator.cpp"
+#include "../iterator.cpp"
 
 class Pow : public Base {
         Base* value1;
