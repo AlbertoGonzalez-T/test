@@ -3,19 +3,20 @@
 
 #include "base.hpp"
 #include "math.h"
+#include "../binary_iterator.cpp"
 
 class Pow : public Base {
-        double value1;
-        double value2;
+        Base* value1;
+        Base* value2;
 	Iterator* iterator;
 	Base* self_ptr;
       public: 
         Pow(Base* val1, Base*  val2) : Base() {
-                value1 = val1->evaluate();
-                value2 = val2->evaluate();
+                value1 = val1
+                value2 = val2
  }
         virtual double evaluate() {
-        return pow(value1, value2);
+        return pow(value1->evaluate(), value2->evaluate());
  }  
         virtual std::string stringify() {
                 std::string x = std::to_string(value1);
@@ -24,15 +25,17 @@ class Pow : public Base {
                 return result;
         }
 	virtual Iterator* create_iterator(){
-                this->iterator = new BinaryIterator(this->self_ptr);
-                return this->iterator;
+                return new BinaryIterator(this);
         }
         virtual Base* get_left(){
-                return this->iterator->current();
+                return value1;
         }
         virtual Base* get_right(){
-                return this->iterator->current();
+                return value2;
         }
+        virtual void accept(CountVisitor* visitor){
+			visitor->visit_pow();
+		}
 
 };
 

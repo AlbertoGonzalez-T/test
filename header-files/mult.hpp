@@ -5,17 +5,15 @@
 #include "base.h"
 
 class Mult : public Base {
-	double value1;
-	double value2;
-	Iterator* iterator;
-	Base* self_ptr;
+	Base* value1;
+	Base* value2;
 public:
 	Mult(Base* v1, Base* v2) : Base() {
-		value1 = v1->evaluate();
-		value2 = v2->evaluate();
+		value1 = v1;
+		value2 = v2;
 	}
 	virtual double evaluate() {
-		return value1 * value2;
+		return value1->evaluate() * value2->evaluate();
 	}
 	virtual std::string stringify() {
 		std::string x = std::to_string(value1);
@@ -24,15 +22,17 @@ public:
 		return result;
 	}
 	virtual Iterator* create_iterator(){
-                this->iterator = new BinaryIterator(this->self_ptr);
-                return this->iterator;
+                return new BinaryIterator(this);
         }
         virtual Base* get_left(){
-                return this->iterator->current();
+                return value1;
         }
         virtual Base* get_right(){
-                return this->iterator->current();
+                return value2;
         }
+		virtual void accept(CountVisitor* visitor){
+			visitor->visit_mult();
+		}
 
 };
 

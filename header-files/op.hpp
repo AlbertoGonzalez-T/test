@@ -2,27 +2,28 @@
 #define __OP_HPP__
 
 #include "base.hpp"
+#include "../iterator.hpp"
 
 class Op : public Base {
-	Base* self_ptr;
-	Iterator* iterator;
+	double operand;
     public:
         Op(double value) : Base() {
-	 double input = value;	
+			operand = value;	
 	}
-        virtual double evaluate() { return 0.0; }
-        virtual std::string stringify() { return ""; }
+        virtual double evaluate() { return operand; }
+        virtual std::string stringify() { return std::to_string(operand); }
 	virtual Iterator* create_iterator(){
-		this->iterator = new NullIterator(this->self_ptr);		
+		return new NullIterator(this);
 	}
 	virtual Base* get_left(){
-		//this->iterator->first();
-		return this->iterator->current();	
+		return nullptr;
 	}
 	virtual Base* get_right(){
-		//this->iterator->next();
-		return this->iterator->current();
+		return nullptr;
 	}
+	virtual void accept(CountVisitor* visitor){
+			visitor->visit_op();
+		}
 };
 
 #endif //__OP_HPP__
