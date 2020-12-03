@@ -17,8 +17,8 @@ class Add : public Base {
         return value1->evaluate() + value2->evaluate();
  }
         virtual std::string stringify() {
-		std::string x = std::to_string(value1);
-		std::string y = std::to_string(value2);
+		std::string x = std::to_string(value1->evaluate());
+		std::string y = std::to_string(value2->evaluate());
 		std::string result = x + " + " + y;
 		return result;
 	}
