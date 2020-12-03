@@ -4,7 +4,6 @@
 #include <stack>
 
 #include "header-files/base.hpp"
-#include "../lab6/lab-06---strategy-pattern-kwidj001-agonz401-lab-6/container.hpp"
 
 class Base;
 
