@@ -1,7 +1,7 @@
-#ifndef MULT_TEST_HPP
-#define MULT_TEST_HPP
+#ifndef __MULT_TEST_HPP__
+#define __MULT_TEST_HPP__
 
-#include "gtest/gtest.h"
+#include "../gtest/gtest.h"
 
 #include "../header-files/op.hpp"
 #include "../header-files/mult.hpp"

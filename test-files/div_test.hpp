@@ -1,5 +1,5 @@
-#ifndef DIV_TEST_HPP
-#define DIV_TEST_HPP
+#ifndef __DIV_TEST_HPP__
+#define __DIV_TEST_HPP__
 
 #include "gtest/gtest.h"
 

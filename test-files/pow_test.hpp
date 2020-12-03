@@ -1,5 +1,5 @@
-#ifndef POW_TEST_HPP
-#define POW_TEST_HPP
+#ifndef __POW_TEST_HPP__
+#define __POW_TEST_HPP__
 
 #include "gtest/gtest.h"
 

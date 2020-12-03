@@ -1,5 +1,5 @@
-#ifndef RAND_TEST_HPP
-#define RAND_TEST_HPP
+#ifndef __RAND_TEST_HPP__
+#define __RAND_TEST_HPP__
 
 #include "gtest/gtest.h"
 
