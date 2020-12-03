@@ -5,6 +5,7 @@
 // #include "../iterator.hpp"
 // #include "../binary_iterator.cpp"
 
+
 class Add : public Base {
         Base* value1;
 		Base* value2;	
