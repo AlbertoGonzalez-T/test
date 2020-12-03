@@ -2,7 +2,7 @@
 #ifndef __MULT_H__
 #define __MULT_H__
 
-#include "base.h"
+#include "base.hpp"
 #include "../iterator.hpp"
 #include "../binary_iterator.cpp"
 class Mult : public Base {

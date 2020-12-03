@@ -1,9 +1,9 @@
 #ifndef __ADD_HPP__
 #define __ADD_HPP__
 
-#include "../header-files/base.hpp"
-#include "../iterator.hpp"
-#include "../binary_iterator.cpp"
+#include "base.hpp"
+// #include "../iterator.hpp"
+// #include "../binary_iterator.cpp"
 
 class Add : public Base {
         Base* value1;
