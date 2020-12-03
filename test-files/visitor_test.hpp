@@ -3,15 +3,15 @@
 
 #include "gtest/gtest.h"
 
-#include "../visitor.hpp";
-#include "../header-files/add.hpp";
-#include "../header-files/sub.hpp";
-#include "../header-files/base.hpp";
-#include "../header-files/op.hpp";
-#include "../header-files/pow.hpp";
-#include "../header-files/rand.hpp";
-#include "../header-files/mult.hpp";
-#include "../header-files/div.hpp";
+#include "../visitor.hpp"
+#include "../header-files/add.hpp"
+#include "../header-files/sub.hpp"
+#include "../header-files/base.hpp"
+#include "../header-files/op.hpp"
+#include "../header-files/pow.hpp"
+#include "../header-files/rand.hpp"
+#include "../header-files/mult.hpp"
+#include "../header-files/div.hpp"
 #include <iostream>
 
 TEST(IteratorTest, PowBinaryTest){
