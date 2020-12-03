@@ -6,6 +6,7 @@
 #include "test-files/add_test.hpp"
 //#include "test-files/sub_test.hpp"
 //#include "test-files/pow_test.hpp"
+#include "test-files/visitor_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

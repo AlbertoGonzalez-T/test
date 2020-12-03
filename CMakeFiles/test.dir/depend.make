@@ -4,10 +4,17 @@
 CMakeFiles/test.dir/unit_test.cpp.o: binary_iterator.cpp
 CMakeFiles/test.dir/unit_test.cpp.o: header-files/add.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: header-files/base.hpp
+CMakeFiles/test.dir/unit_test.cpp.o: header-files/div.hpp
+CMakeFiles/test.dir/unit_test.cpp.o: header-files/mult.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: header-files/op.hpp
+CMakeFiles/test.dir/unit_test.cpp.o: header-files/pow.hpp
+CMakeFiles/test.dir/unit_test.cpp.o: header-files/rand.hpp
+CMakeFiles/test.dir/unit_test.cpp.o: header-files/sub.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: iterator.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: test-files/add_test.hpp
+CMakeFiles/test.dir/unit_test.cpp.o: test-files/visitor_test.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: unit_test.cpp
+CMakeFiles/test.dir/unit_test.cpp.o: visitor.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: /home/csmajs/kwidj001/lab6/lab-06---strategy-pattern-kwidj001-agonz401-lab-6/container.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: /home/csmajs/kwidj001/lab6/lab-06---strategy-pattern-kwidj001-agonz401-lab-6/sort.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: googletest/googletest/include/gtest/gtest-death-test.h

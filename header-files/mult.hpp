@@ -2,7 +2,7 @@
 #ifndef __MULT_H__
 #define __MULT_H__
 
-#include "base.h"
+#include "base.hpp"
 
 class Mult : public Base {
 	Base* value1;
