@@ -35,7 +35,6 @@ class Add : public Base {
 	}
 	virtual void accept(CountVisitor* visitor){
 		visitor->visit_add();
-	}
 	
 };
 
