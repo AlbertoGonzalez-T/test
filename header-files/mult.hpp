@@ -3,7 +3,8 @@
 #define __MULT_H__
 
 #include "base.h"
-
+#include "../iterator.hpp"
+#include "../binary_iterator.cpp"
 class Mult : public Base {
 	Base* value1;
 	Base* value2;
