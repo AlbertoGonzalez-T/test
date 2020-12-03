@@ -11,7 +11,7 @@ TEST(powPtrTest, get_left){
         Op* test2 = new Op(2);
         Pow* test = new Pow(test1, test2);
         test->create_iterator();
-        EXPECT_EQ(test->get_left()->evaluate(), 8);
+        EXPECT_EQ(test->get_left()->evaluate(), 8;
 }
 
 TEST(powPtrTest, get_right){
