@@ -26,10 +26,10 @@ class Div : public Base {
                 return new BinaryIterator(this);
         }
         virtual Base* get_left(){
-                return this->iterator->current();
+                return value1;
         }
         virtual Base* get_right(){
-                return this->iterator->current();
+                return value2;
         }
         virtual void accept(CountVisitor* visitor){
                 visitor->visit_div();

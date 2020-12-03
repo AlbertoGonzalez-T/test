@@ -26,12 +26,10 @@ class Add : public Base {
 		return new BinaryIterator(this);
 	}
 	virtual Base* get_left(){
-		Op* left = new Op(value1);
-		return left;
+		return value1;
 	}
 	virtual Base* get_right(){
-		Op* right = new Op(value2);
-		return right;
+		return value2;
 	}
 	virtual void accept(CountVisitor* visitor){
 		visitor->visit_add();
