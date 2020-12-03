@@ -2,6 +2,7 @@
 #define RAND_HPP
 
 #include "base.hpp"
+#include "../iterator.hpp"
 
 class Rand : public Base {
         double v;
@@ -13,6 +14,18 @@ class Rand : public Base {
         return v;
  }
         virtual std::string stringify() { return std::to_string(v); }
+        virtual void accept(CountVisitor* visitor){
+			visitor->visit_rand(self_ptr);
+		}
+       virtual Iterator* create_iterator(){
+		return new NullIterator(this);	
+	}
+	virtual Base* get_left(){
+		return nullptr;
+	}
+	virtual Base* get_right(){
+		return nullptr;
+	}
 };
 
 #endif //RAND_HPP

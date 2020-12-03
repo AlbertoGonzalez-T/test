@@ -3,19 +3,18 @@
 
 #include "base.hpp"
 #include "../iterator.hpp"
+#include "../binary_iterator.cpp"
 
 class Div : public Base {
-	double value1;
-	double value2;
-	Iterator* iterator;
-	Base* self_ptr;
+	Base* value1;
+	Base* value2;
       public:
         Div(Base* val1, Base*  val2) : Base() {
-		value1 = val1->evaluate();
-		value2 = val2->evaluate();
+		value1 = val1;
+                value2 = val2;
  }
         virtual double evaluate() {
-        return value1 / value2;
+        return value1->evaluate() / value2->evaluate();
  }
         virtual std::string stringify() {
 		std::string x = std::to_string(value1);
@@ -24,14 +23,16 @@ class Div : public Base {
 		return result;
 	}
 	virtual Iterator* create_iterator(){
-                this->iterator = new BinaryIterator(this->self_ptr);
-                return this->iterator;
+                return new BinaryIterator(this);
         }
         virtual Base* get_left(){
                 return this->iterator->current();
         }
         virtual Base* get_right(){
                 return this->iterator->current();
+        }
+        virtual void accept(CountVisitor* visitor){
+                visitor->visit_div();
         }
 
 
