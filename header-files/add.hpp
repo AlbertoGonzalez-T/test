@@ -29,10 +29,12 @@ class Add : public Base {
 		return this->iterator;		
 	}
 	virtual Base* get_left(){
-		return this->iterator->current(); 
+		Op* left = new Op(value1);
+		return left;
 	}
 	virtual Base* get_right(){
-		return this->iterator->current();
+		Op* right = new Op(value2);
+		return right;
 	}
 	
 };
