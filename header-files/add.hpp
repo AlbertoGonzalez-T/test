@@ -4,6 +4,7 @@
 #include "base.hpp"
 // #include "../iterator.hpp"
 // #include "../binary_iterator.cpp"
+class Base;
 
 
 class Add : public Base {

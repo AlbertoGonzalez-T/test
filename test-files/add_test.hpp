@@ -6,7 +6,7 @@
 #include "../header-files/op.hpp"
 #include "../header-files/add.hpp"
 #include <iostream>
-TEST(addPtrTest, get_left){
+TEST(addTest, get_Left){
         Op* test1 = new Op(8);
         Op* test2 = new Op(2);
         Add* test = new Add(test1, test2);
@@ -14,7 +14,7 @@ TEST(addPtrTest, get_left){
         EXPECT_EQ(test->get_left()->evaluate(), 8);
 };
 
-TEST(addPtrTest, get_right){
+TEST(addTest, getRight){
 	Op* test1 = new Op(8);
 	Op* test2 = new Op(2);
 	Add* test = new Add(test1, test2);
