@@ -15,8 +15,6 @@ CMakeFiles/test.dir/unit_test.cpp.o: test-files/add_test.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: test-files/visitor_test.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: unit_test.cpp
 CMakeFiles/test.dir/unit_test.cpp.o: visitor.hpp
-CMakeFiles/test.dir/unit_test.cpp.o: /home/csmajs/kwidj001/lab6/lab-06---strategy-pattern-kwidj001-agonz401-lab-6/container.hpp
-CMakeFiles/test.dir/unit_test.cpp.o: /home/csmajs/kwidj001/lab6/lab-06---strategy-pattern-kwidj001-agonz401-lab-6/sort.hpp
 CMakeFiles/test.dir/unit_test.cpp.o: googletest/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/test.dir/unit_test.cpp.o: googletest/googletest/include/gtest/gtest-matchers.h
 CMakeFiles/test.dir/unit_test.cpp.o: googletest/googletest/include/gtest/gtest-message.h
