@@ -2,7 +2,7 @@
 #define __OP_HPP__
 
 #include "base.hpp"
-#include "../iterator.hpp"
+//#include "../iterator.hpp"
 
 class Op : public Base {
 	double operand;
