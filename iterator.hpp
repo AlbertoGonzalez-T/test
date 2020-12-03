@@ -3,8 +3,8 @@
 
 #include <stack>
 
-#include "../lab03/base.hpp"
-#include "../lab04/container.hpp"
+#include "header-files/base.hpp"
+#include "../lab6/lab-06---strategy-pattern-kwidj001-agonz401-lab-6/container.hpp"
 
 class Base;
 
