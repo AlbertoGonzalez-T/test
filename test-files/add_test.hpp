@@ -12,7 +12,7 @@ TEST(addTest, get_Left){
         Add* test = new Add(test1, test2);
 		test->create_iterator();
         EXPECT_EQ(test->get_left()->evaluate(), 8);
-}
+};
 
 TEST(addTest, getRight){
 	Op* test1 = new Op(8);
@@ -20,6 +20,6 @@ TEST(addTest, getRight){
 	Add* test = new Add(test1, test2);
 	test->create_iterator();
 	EXPECT_EQ(test->get_right()->evaluate(), 2);
-}
+};
 
 #endif //ADD_TEST_HPP
