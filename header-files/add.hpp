@@ -2,7 +2,8 @@
 #define __ADD_HPP__
 
 #include "base.hpp"
-// #include "../iterator.hpp"
+#include "../iterator.hpp"
+#include "../visitor.hpp"
 // #include "../binary_iterator.cpp"
 class Base;
 

@@ -5,6 +5,7 @@
 #include "base.hpp"
 #include "../iterator.hpp"
 #include "../binary_iterator.cpp"
+#include "../visitor.hpp"
 
 
 class Mult : public Base {

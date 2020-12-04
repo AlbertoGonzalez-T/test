@@ -2,7 +2,8 @@
 #define DIV_HPP
 
 #include "base.hpp"
-//#include "../iterator.hpp"
+#include "../iterator.hpp"
+#include "../visitor.hpp"
 //#include "../binary_iterator.cpp"
 
 class Div : public Base {

@@ -3,7 +3,8 @@
 
 #include "base.hpp"
 #include "math.h"
-
+#include "../visitor.hpp"
+#include "../iterator.hpp"
 
 class Pow : public Base {
         Base* value1;

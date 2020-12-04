@@ -2,7 +2,8 @@
 #define SUB_HPP
 
 #include "base.hpp"
-
+#include "../visitor.hpp"
+#include "../iterator.hpp"
 
 class Sub : public Base {
         Base* value1;
